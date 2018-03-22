@@ -1,0 +1,118 @@
+/*General Styling*/
+
+@font-face {
+    font-family: 'league_gothicCnRg';
+    src: url('chloecambell-condensedregular-webfont.woff2') format('woff2'),
+         url('chloecambell-condensedregular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #dfe4ea;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+	opacity: 0.75;
+	transition: 0.3s ease-out;
+}
+
+a:hover {
+	opacity: 1;
+}
+
+/*Main Styling*/
+
+.main {
+	position: relative;
+	justify-content: center;
+	text-align: center;
+	min-height: 100vh
+}
+
+.first	{
+	position: absolute;
+	top: -20%;
+	left: 1%;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	font-family: 'league_gothicCnRg';
+	font-size: 80vw;
+	opacity: 0;
+	animation: slideLeft 2s ease-in forwards;
+}
+
+@keyframes slideLeft {
+	100% {
+		opacity: 1;
+	}
+}
+
+.second	{
+	position: absolute;
+	top: 30%;
+	left: 21%;
+	color: #2f3542;
+	z-index: 10;
+	font-family: 'league_gothicCnRg';
+	font-size: 22vw;
+	background-color: transparent;
+	margin-top: 200px;
+	opacity: 0;
+	animation: riseUp 1.3s ease-in forwards;}
+
+@keyframes riseUp {
+	100% {
+		margin-top: 0;
+		opacity: 1;
+	}
+}
+
+
+
+
+ 
+/*Footer Styling*/
+
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #2f3542;
+	color: white;
+	padding: 40px;
+}
+
+footer .grid {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+footer p{
+	margin-top: 10px;
+}
+
+footer ul li {
+	margin: 0 10px;
+}
+
+
